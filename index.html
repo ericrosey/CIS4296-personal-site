@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -8,9 +8,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+    <title>Eric Rosenblatt</title>
     <style>
         html,
         body {
@@ -35,12 +38,11 @@
             border: 2px solid black;
             opacity: 0.5;
             transition: 0.3s;
-
         }
 
-        .btn-outline:hover {
-            opacity: 1;
-        }
+            .btn-outline:hover {
+                opacity: 1;
+            }
 
         .lang {
             height: 60px;
@@ -51,9 +53,9 @@
             font-size: 65px;
         }
 
-        .contacticon a {
-            color: rgb(33, 37, 41);
-        }
+            .contacticon a {
+                color: rgb(33, 37, 41);
+            }
 
         .course {
             margin: 0 10px;
@@ -66,30 +68,46 @@
             align-items: center;
         }
 
-        .course h5 {
-            margin: 0;
-        }
+            .course h5 {
+                margin: 0;
+            }
 
         .next {
             font-size: 65px;
         }
 
-        .next a {
-            color: rgb(33, 37, 41);
+            .next a {
+                color: rgb(33, 37, 41);
+            }
+
+        .btnCourse {
+            border: none;
+        }
+
+        .carouselHeader {
+            font-size: larger;
+            text-align:center;
+            font-weight: bold;
+        }
+        .item{
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+        <a class="navbar-brand" href="#landing">Eric Rosenblatt<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe">About Me</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
@@ -104,35 +122,44 @@
     </nav>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm Eric!</h4>
         </div>
         <div class="row mx-auto">
-            <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
-                University.</h5>
+            <h5 class="display-5 mx-auto faded text-center">
+                I'm an Information Science & Technology Student at Temple
+                University.
+            </h5>
         </div>
         <div class="row my-4">
-            <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
-
-            <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="C#" /></div>
-            <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Node.js" /></div>
-            <div class="col my-3"><img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Java" /></div>
-
-            <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="MongoDB" /></div>
-
+            <div class="col my-3">
+                <img src="images/c.png" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="C" />
+            </div>
+            <div class="col my-3">
+                <img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Angular" />
+            </div>
+            <div class="col my-3">
+                <img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="C#" />
+            </div>
+            <div class="col my-3">
+                <img src="images/java.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Java" />
+            </div>
+            <div class="col my-3">
+                <img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="ASP.NET" />
+            </div>
+            <div class="col my-3">
+                <img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+                     title="Microsoft SQL Server" />
+            </div>
         </div>
         <div class="row my-4">
+            <div class="col">
+                <a href="#aboutMe"><button type="button" class="btn btn-outline">About Me</button></a>
+            </div>
             <div class="col">
                 <a href="#projects"><button type="button" class="btn btn-outline">Projects</button></a>
             </div>
@@ -144,10 +171,37 @@
             </div>
         </div>
         <div class="row mt-5 next">
-            <a href="#projects" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Projects"></i></a> </div>
+            <a href="#aboutMe" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="About Me"></i>
+            </a>
+        </div>
 
     </div>
+
+    <div class="container landing d-flex justify-content-center flex-column align-items-center" id="aboutMe">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">About Me</h4>
+        </div>
+        <div class="row mx-auto">
+            <p style="text-align:center">
+                I am currently a Senior at Temple University studying Information Science and Technology, but I actually
+                started out my academic career studying business. While I was unsure of what I really wanted to pursue, I found
+                that business was certainly not the right path for me so I decided to switch majors to electrical engineering.
+                I did find these studies to be much more interesting than what I was learning at Fox, but it was extremely difficult
+                to fully engage myself in the work since I was not very passionate about it. Luckily, I was able to take a Programming
+                in C course during my time there, and I pretty much decided that coding is what I wanted to pursue for my future. Now it
+                has been 3 years in this curiculum and I haven't looked back since.
+            </p>
+        </div>
+        <div class="row mt-5 next">
+            <a href="#projects" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Projects"></i>
+            </a>
+        </div>
+    </div>
+
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="projects">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Projects</h4>
@@ -155,40 +209,65 @@
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
         </div>
-        <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
+
+        <div id="ProjectCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <h5 class="carouselHeader">Workforce Initiative Network for Lenfest North Philadelphia Worforce Initiative</h5>
+                    <p class="text-justify">
+                        In this project, my team and I worked to create a better system for the Lenfest Collective by
+                        making a central hub that will allow their organizations to view and share their employer contact information with ease. Their
+                        current system, which distributes the information using emails, was unable to properly allow them to communicate with each other
+                        to be able to fully benefit the North Philadelphia community. While this project is currently only in the design phase, I look
+                        forward to making our ideas into a working application.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h5 class="carouselHeader">Book Store Involving a Database</h5>
+                    <p class="text-justify">
+                        In this project, I created an input aspx page for the user to put all their information which was
+                        validated on the client side to that the page did not have to do any unneccesary processing. I brought all the book information
+                        from the database in using a connection class, and placed the information into a gridview to make it easy for the user to understand.
+                        Then the user was able to pick which books they wanted along with the quantity per book and their order would be processed and
+                        shown in a serparate gridview acting as a receipt. This gridview contained a total of all the books in the order and the total
+                        price for the books selected. When the user finished the order, the database was updated with new totals for a book's sales, quantity
+                        rented, and quantity bought. These totals for the books could be seen on a management report page with the click of a button.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h5 class="carouselHeader">Bingo Game</h5>
+                    <p class="text-justify">
+                        In this project, I got to take my first shot at component-based software design. Having never done it before, it was a big
+                        learning curve in the beginning, but eventually I was able to figure it out and get a solid grasp of the concepts. I generated a
+                        bingo board with the correct numbers in the letter columns so that it would properly play out, and then had to validate the user's
+                        button clicks. If they clicked the wrong space, they would be alerted, and if they tried to skip to the next calling number while it
+                        was on their board, then they would be alerted also. Looking back, this project would be pretty simple now, but I believe it helped
+                        me a lot with struggling through problems to find the end solution.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#ProjectCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#ProjectCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
-                in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
-                sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
-                tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
-                purus. Suspendisse imperdiet massa nec sem dictum luctus. Vestibulum at porta lectus, sed
-                faucibus libero. </p>
-        </div>
-        <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
-        </div>
-        <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
-                finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
-                sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
-                risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
-        </div>
-        <div class="row w-100">
-            <h5>Query Dating Site</h5>
-        </div>
-        <div class="row w-100">
-            <p class="text-justify">Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra odio ut
-                egestas. Nullam facilisis condimentum consequat. Integer arcu nibh, ullamcorper non fringilla quis,
-                tempus sit amet turpis. Proin ac gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor sit
-                amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a maximus vel, fringilla eu nisl.
-                Pellentesque sed quam non urna dapibus porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-                efficitur at. </p>
-        </div>
+
         <div class="row mt-5 next">
-            <a href="#courses" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Courses"></i></a> </div>
+            <a href="#courses" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Courses"></i>
+            </a>
+        </div>
     </div>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="courses">
         <div class="row mx-auto">
@@ -199,32 +278,192 @@
         </div>
         <div class="row w-100 justify-content-center my-3">
             <div class="col text-center course">
-                <h5>Information Systems Analysis and Design</h5>
+                <button type="button" class="btnCourse" data-toggle="modal" data-target="#InfoSystemsCourse">Information Systems Analysis and Design</button>
+
+                <!-- Modal -->
+                <div id="InfoSystemsCourse" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" style="margin-left:0px">&times;</button>
+                                <h4 class="modal-title" style="margin:auto">Information Systems Analysis and Design</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    The analysis and design phases of the System Development Life cycle are covered in detail.
+                                    Methodologies for systems analysis, specifications, and design are covered. Both the Traditional
+                                    Structured and Object Oriented methodologies are used by the students, working in teams, to develop
+                                    real-life information systems. Emphasis is placed on well-written documentation as well as oral
+                                    communication typically required during the software development life cycle. Project management tools
+                                    are employed by students to monitor their progress and the costs associated with their projects.
+                                    CASE tools are employed for data and information modeling and specification.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col text-center course">
-                <h5>Server-Side Web Application Development</h5>
+                <button type="button" class="btnCourse" data-toggle="modal" data-target="#ServerSide">Server-Side Web Application Development</button>
+
+                <!-- Modal -->
+                <div id="ServerSide" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" style="margin-left:0px">&times;</button>
+                                <h4 class="modal-title" style="margin:auto">Server-Side Web Application Development</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    The objective of this course is to provide further depth, beyond CIS 3309, into the development
+                                    of network deployed systems. Its emphasis is on distributed, multi-tier architectures. The course
+                                    is divided into 3 parts. First is the theory associated with software engineering design principles
+                                    and distributed processing in client/server architectures and database systems. The second part is
+                                    a deeper knowledge of the ASP.NET and C#.NET languages beyond CIS 3309. This would include such
+                                    topics as web and windows applications, user interfaces, event handling, database design and ADO.NET,
+                                    Web Services, Ajax, user controls, and report generation. The third part of the course is a project
+                                    that the student will perform in the design and programming of a distributed client/server application.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row w-100 justify-content-center my-3">
             <div class="col text-center course">
-                <h5>Network Architectures</h5>
+                <button type="button" class="btnCourse" data-toggle="modal" data-target="#NetworkArchitectures">Network Architectures</button>
+
+                <!-- Modal -->
+                <div id="NetworkArchitectures" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" style="margin-left:0px">&times;</button>
+                                <h4 class="modal-title" style="margin:auto">Network Architectures</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This course covers the operation of computer networks and internets. It provides the
+                                    background to enable students to evaluate alternative approaches to client-server computing
+                                    and n-tier software development. To accomplish this the course includes communications technology,
+                                    computer network technology internetworking using the TCP/IP protocol suite, client-server protocols,
+                                    client-server computing, network program component models as well as issues involving security,
+                                    privacy, authentication, intellectual property rights, and social changes related to computer networking.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <div class="col text-center course">
-                <h5>Client-Side Scripting</h5>
+                <button type="button" class="btnCourse" data-toggle="modal" data-target="#ClientSideScripting">Client-Side Scripting for the Web</button>
+
+                <!-- Modal -->
+                <div id="ClientSideScripting" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" style="margin-left:0px">&times;</button>
+                                <h4 class="modal-title" style="margin:auto">Client-Side Scripting for the Web</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Today's web applications are becoming more interactive, doing more on the client side and less on
+                                    the server side. A new software design goal is to write a single code base that can support many
+                                    formats, from mobile phones, to tablets, to computer monitors. This course will focus on current
+                                    technologies in client side web scripting, such as: HTML, CSS, responsive web design techniques,
+                                    JavaScript, JavaScript libraries (such as jQuery), JSON (or other web data formats), Ajax
+                                    (a technique using JavaScript to make asynchronous calls to web APIs), and client side web application
+                                    frameworks (such as AngularJS). Students will create web applications that access a database using
+                                    client side code that invokes web APIs.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row w-100 justify-content-center my-3">
             <div class="col text-center course">
-                <h5>Component-Based Software Design</h5>
+                <button type="button" class="btnCourse" data-toggle="modal" data-target="#ComponentBasedSoftwareDesign">Component-Based Software Design</button>
+
+                <!-- Modal -->
+                <div id="ComponentBasedSoftwareDesign" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" style="margin-left:0px">&times;</button>
+                                <h4 class="modal-title" style="margin:auto">Component-Based Software Design</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This course emphasizes component-based software development using a modern object-oriented programming
+                                    (OOP) language (currently C#). Students are introduced to software development techniques applicable in
+                                    a component (class)-based, integrated software development environment (IDE). Students will learn (and
+                                    practice using) the OOP language, object-oriented software design techniques, and the principles of good
+                                    user interface design. Students will also learn how to navigate in, and take full advantage of, an IDE
+                                    in building quality software, including user interfaces to databases, sequential files, and graphics tools.
+                                    Object-oriented concepts such as inheritance, polymorphism, static and dynamic binding, and interface
+                                    (abstract class) components will be covered. The primary focus is on windows-based software products,
+                                    but the use of ASP.NET for client-server systems development is also introduced.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
             <div class="col text-center course">
-                <h5>Database Management Systems</h5>
+                <button type="button" class="btnCourse" data-toggle="modal" data-target="#DatabaseManagementSystems">Database Management Systems</button>
+
+                <!-- Modal -->
+                <div id="DatabaseManagementSystems" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" style="margin-left:0px">&times;</button>
+                                <h4 class="modal-title" style="margin:auto">Database Management Systems</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This is an introductory course in database management systems (DBMS) and file management systems.
+                                    The course covers data modeling concepts, various file management techniques, data definition and
+                                    manipulation using SQL, issues in data management, development and implementation of database
+                                    applications, and a perspective on emerging issues in database systems. Students work in the Lab
+                                    on various assignments including prototyping and SQL, utilizing state of the art DBMS and CASE tools.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row mt-5 next">
-            <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
-                    title="Contact"></i></a> </div>
+            <a href="#contact" class="col">
+                <i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                   title="Contact"></i>
+            </a>
+        </div>
     </div>
+
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
@@ -233,12 +472,18 @@
             <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
         </div>
         <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
-                    data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
-                    data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
-                    data-toggle="tooltip" data-placement="top" title="Github"></i></a>
+            <a href="mailto:eric.rosenblatt@temple.edu" class="col mx-3">
+                <i class="fas fa-envelope-square"
+                   data-toggle="tooltip" data-placement="top" title="Email"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/eric-rosenblatt-86b2b4127/" class="col mx-3">
+                <i class="fab fa-linkedin"
+                   data-toggle="tooltip" data-placement="top" title="LinkedIn"></i>
+            </a>
+            <a href="https://github.com/ericrosey" class="col mx-3">
+                <i class="fab fa-github-square"
+                   data-toggle="tooltip" data-placement="top" title="Github"></i>
+            </a>
 
         </div>
         <div class="row mt-5">
@@ -248,13 +493,13 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script>
         $(function () {
